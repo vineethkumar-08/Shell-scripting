@@ -10,4 +10,4 @@ echo "Sum is : $SUM"
 #Array
 FRUITS=("APPLE" "BANANA" "ORANGE" "GRAPES")
 
-echo "Fruits are : ${FRUITS[@]}"
+echo "Fruits are : ${FRUITS}"
