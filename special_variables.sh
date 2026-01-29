@@ -20,3 +20,20 @@ sleep 100 &
 
 echo "PID of last background process: $!"  #displays process id of last background command
 echo "All args paaesed to script: $@"  #displays all arguments passed to script
+
+
+
+# output example:
+# [ ec2-user@ip-172-31-26-220 ~/Shell-scripting ]$ sh special_variables.sh vineeth chintu
+# All args passed to script: vineeth chintu
+# number of variables passed to scripts: 2
+# Process ID of current script: 2298
+# Last command exit status: 0
+# Script name: special_variables.sh
+# present Directory: /home/ec2-user/Shell-scripting
+# who is running: ec2-user
+# PID of last background process:
+# All args passed as single string: vineeth chintu
+# Home directory of current user: /home/ec2-user
+# Shell being used: /bin/bash
+# PID of last background process: 2299
