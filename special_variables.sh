@@ -19,3 +19,4 @@ echo "Shell being used: $SHELL"  #displays current shell being used
 sleep 100 &
 
 echo "PID of last background process: $!"  #displays process id of last background command
+echo "All args paaesed to script: $@"  #displays all arguments passed to script
