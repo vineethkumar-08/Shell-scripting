@@ -5,3 +5,5 @@ echo "Current Timestamp of script executed: $START_TIME"
 
 
 sleep 10
+
+END_TIME=$(date)
