@@ -8,6 +8,6 @@ echo "Sum is : $SUM"
 
 
 #Array
-FRUITS= ("APPLE" "BANANA" "ORANGE" "GRAPES")
+FRUITS=("APPLE" "BANANA" "ORANGE" "GRAPES")
 
 echo "Fruits are : ${FRUITS[@]}"
