@@ -15,11 +15,11 @@ mkdir -P $LOGS_FOLDER  #creating logs folder if not exists
 # Function to validate the installation status
 VALIDATE(){
      
-    if [ $? -ne 0 ] ; then
-        echo " $1 installation failed..." # error message 
+    if [ $1 -ne 0 ] ; then
+        echo " $2 installation failed..." # error message 
         exit 1
     else
-        echo " $1 Instalation sucessful...."
+        echo " $2 Instalation sucessful...."
 fi
 }
 
