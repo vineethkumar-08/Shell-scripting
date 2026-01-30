@@ -9,4 +9,4 @@ W=\e[37m  # White
 N=\e[0m  # No Color
 
 
-echo -e $G "Hello this is vineeth" $N " Am learning colours in shell scripting"]
+echo -e $G "Hello this is vineeth"$N , $Y" Am learning colours in shell scripting$N"
