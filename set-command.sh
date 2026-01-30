@@ -38,6 +38,6 @@ fi
 
     #VALIDATE $? " insstalling $PACKAGE web server" | tee -a $LOGS_FILE
     else
-    echo " $PACKAGE is already installed , skipping installation..." | tee -a $LOGS_FILE
+    echo " $PACKAGE $Gis already installed , skipping installation...$N" | tee -a $LOGS_FILE
     fi  
     done 
