@@ -26,3 +26,4 @@ fi
   do
   dnf install $PACKAGE -y &>> $LOGS_FILE
     VALIDATE $? " insstalling $PACKAGE web server" | tee -a $LOGS_FILE
+    done
