@@ -25,4 +25,5 @@ mkdir -p $LOGS_FOLDER  #creating logs folder if not exists
       else
         echo -e "$G $PACKAGE is already installed, skipping installation... $N" | tee -a $LOGS_FILE
         fi
-      
+    done
+    
