@@ -6,7 +6,7 @@ LOGS_FILE="/var/logs/Shell-scripting/$0.log"   #defining log file path
 
 if [ $USERID -ne 0 ] ; then 
 
-echo  -e "$R Please run this script with root acess $N" | tee -a $LOGS_FILE     #run as root user 
+echo "$R Please run this script with root acess $N" | tee -a $LOGS_FILE     #run as root user 
 
 exit  # exit scode
 fi
@@ -16,10 +16,10 @@ mkdir -p $LOGS_FOLDER  #creating logs folder if not exists
 VALIDATE(){
      
     if [ $1 -ne 0 ] ; then
-        echo -e "$R $2 installation failed... $N" | tee -a $LOGS_FILE # error message 
+        echo " $2 $R installation failed... $N" | tee -a $LOGS_FILE # error message 
         exit 1
     else
-        echo -e "$2 $B Instalation sucessful.... $Y"  | tee -a $LOGS_FILE
+        echo " $2 $G installation successful.... $Y"  | tee -a $LOGS_FILE
 fi
 
 
@@ -27,5 +27,5 @@ fi
   for PACKAGE in $@ #loop through all passed arguments like sh logs.sh nginx mysql nodejs
   do
   dnf install $PACKAGE -y &>> $LOGS_FILE
-    VALIDATE $? "insstalling $PACKAGE web server" | tee -a $LOGS_FILE
+    VALIDATE $? " insstalling $PACKAGE web server" | tee -a $LOGS_FILE
     done
