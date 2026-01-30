@@ -9,7 +9,7 @@ echo "please run this script with rooct user access"
 exit 1
 fi
 
-echo "installing nginx web server"
+echo "installing nginxxx web server"
 
 dnf install nginx -y
 
