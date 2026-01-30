@@ -2,7 +2,7 @@
 
 USERID=$(id -u)
 LOGS_FOLDER="/var/logs/Shell-scripting"  #defining logs folder path
-LOGS_FILE- "/var/logs/Shell-scripting/$0.log"   #defining log file path
+LOGS_FILE="/var/logs/Shell-scripting/$0.log"   #defining log file path
 
 if [ $USERID -ne 0 ] ; then 
 
@@ -10,7 +10,7 @@ echo " Please run this script with root acess" #run as root user
 
 exit  # exit scode
 fi
-mkdir -P $LOGS_FOLDER  #creating logs folder if not exists
+mkdir -p $LOGS_FOLDER  #creating logs folder if not exists
 
 # Function to validate the installation status
 VALIDATE(){
