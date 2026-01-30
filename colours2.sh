@@ -16,10 +16,11 @@ mkdir -p $LOGS_FOLDER  #creating logs folder if not exists
 VALIDATE(){
      
     if [ $1 -ne 0 ] ; then
-        echo " $2 $R installation failed... $N" | tee -a $LOGS_FILE # error message 
+        echo " $2 $Rinstallation failed...$N" | tee -a $LOGS_FILE # error message 
         exit 1
     else
-        echo " $2 $G installation successful.... $Y"  | tee -a $LOGS_FILE
+
+        echo " $2 $Ginstallation successful....$N"  | tee -a $LOGS_FILE
 fi
 
 
