@@ -21,6 +21,8 @@ VALIDATE(){
     else
         echo " $2 Instalation sucessful...."  | tee -a $LOGS_FILE
 fi
+
+
 }
   for PACKAGE in $@ #loop through all passed arguments like sh logs.sh nginx mysql nodejs
   do
