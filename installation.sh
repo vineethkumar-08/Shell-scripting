@@ -9,9 +9,9 @@ echo "please run this script with rooct user access"
 exit 1
 fi
 
-echo "installing nginxxx web server"
+echo "installing nginx web server"
 
-dnf install nginx -y
+dnf install nginxxx -y
 
 if [ $? -ne 0 ] ; then
 echo " nginx installation failed..."
