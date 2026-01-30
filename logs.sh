@@ -10,7 +10,7 @@ echo " Please run this script with root acess" #run as root user
 
 exit  # exit scode
 fi
-mkdiR -P $LOGS_FOLDER  #creating logs folder if not exists
+mkdir -P $LOGS_FOLDER  #creating logs folder if not exists
 
 # Function to validate the installation status
 VALIDATE(){
